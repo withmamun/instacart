@@ -1,0 +1,640 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    color: #343538;
+    font-weight: 700;
+    font-size: 29px;
+}
+
+p {
+    color: #343538;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    max-width: 1400px;
+}
+
+
+/*-------------------- Offcanvas area css start --------------------*/
+
+.menu-close {
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 18px;
+    cursor: pointer;
+    transition: .4s;
+    border: 1px solid #fff;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-close:hover {
+    color: #000;
+    background: #fff;
+}
+
+.offcanvas-area {
+    position: fixed;
+    left: -100%;
+    height: 100%;
+    width: 318px;
+    background: #262846;
+    z-index: 6;
+    padding-top: 35px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    visibility: hidden;
+    top: 0;
+}
+
+.offcanvas-area.active {
+    left: 0;
+    visibility: visible;
+}
+
+.offcanvas-area .main-menu ul li a {
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: .3s;
+    padding: 16px 22px;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+}
+
+.offcanvas-area .main-menu ul li:first-child a {
+    border-top: 1px solid #fff;
+}
+
+.offcanvas-area .main-menu ul li a:hover,
+.offcanvas-area .main-menu ul li a[aria-expanded="true"] {
+    color: #D5D5D5;
+}
+
+.offcanvas-menu .main-menu ul {
+    display: block;
+    padding-top: 94px;
+    padding-left: 0;
+    margin-bottom: 65px;
+    list-style: none;
+}
+
+.offcanvas-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .4s;
+    transition: .4s;
+    z-index: 5;
+}
+
+.offcanvas-overlay.active {
+    opacity: .4;
+    visibility: visible;
+}
+
+.menu-open {
+    font-size: 27px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+    margin-left: 20px;
+    margin-right: 8px;
+}
+
+.offcanvas-menu .common-btn {
+    font-size: 17px;
+    padding: 9px 30px;
+    border-radius: 12px;
+}
+
+.offcanvas-btn a {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 15px;
+    width: 200px;
+    height: 60px;
+    text-decoration: none;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin: 0 auto
+}
+
+.offcanvas-btn a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+/*-------------------- Offcanvas area css end --------------------*/
+
+
+/*-------------------- Header area css start --------------------*/
+
+.header__area {
+    padding: 15px 0px;
+}
+
+.header__main__blk {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0px 30px;
+}
+
+.header__left__blk {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.header__menu span {
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    color: #343538;
+    position: relative;
+    top: 3px;
+}
+
+.header__logo a img {
+    width: 150px;
+}
+
+.header__btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 17px;
+}
+
+.header__btn a:last-child {
+    width: 100px;
+    height: 36px;
+    background-color: #108910;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.header__btn a:first-child {
+    color: #343538;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.header__search {
+    width: 60%;
+}
+
+.header__search__form {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    height: 44px;
+}
+
+.header__search__form input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #F4F4F4;
+    outline: none;
+    padding-left: 37px;
+    padding-right: 18px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.header__search__form input:focus {
+    border: 1px solid #343538;
+}
+
+.header__search__form button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    font-size: 14px;
+    color: #343538;
+}
+
+/*-------------------- Header area css end --------------------*/
+
+
+/*-------------------- Hero area css start --------------------*/
+
+.hero__area {
+    padding: 60px 0px;
+    position: relative;
+    z-index: 1;
+    background-color: #deedd6;
+    overflow: hidden;
+}
+
+.hero__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.hero__img img {
+    width: 270px;
+}
+
+.hero__content h1 {
+    font-size: 41px;
+    color: #001810;
+}
+
+.hero__content p {
+    color: #001810;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.hero__content {
+    max-width: 535px;
+}
+
+/*-------------------- Hero area css end --------------------*/
+
+
+/*-------------------- Product area css start --------------------*/
+
+.product__area {
+    padding: 40px 0px;
+}
+
+.product__topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding-right: 120px;
+}
+
+.product__topbar h2 {
+    margin-bottom: 0;
+    font-size: 21px;
+    text-transform: capitalize;
+}
+
+.product__topbar a {
+    color: #343538;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.product__topbar a:hover {
+    color: #108910;
+}
+
+.product__img__blk {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.product__img__blk img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product__label span {
+    background-color: #F4F4F4;
+    font-size: 11px;
+    font-weight: 600;
+    color: #343538;
+    padding: 2px 6px;
+    display: inline-block;
+}
+
+.product__price span {
+    color: #343538;
+}
+
+.product__price span:first-child {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.product__price span:last-child {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.product__price {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    margin-top: 5px;
+}
+
+.product__title a {
+    color: #343538;
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+}
+
+.product__qty span {
+    color: #848484;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.product__main__slider .owl-dots {
+    display: none;
+}
+
+.product__main__slider .owl-nav button {
+    background-color: #E8E9EB !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #343538 !important;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.product__main__slider .owl-nav button:hover {
+    background-color: #108910 !important;
+    color: #fff !important;
+}
+
+.product__main__slider .owl-nav {
+    position: absolute;
+    right: 0;
+    top: -54px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.product__main__slider .owl-prev.disabled {
+    opacity: .5;
+    cursor: default !important;
+}
+
+.product__main__slider .owl-next.disabled {
+    opacity: .5;
+    cursor: default !important;
+}
+
+.product__single__slide {
+    position: relative;
+    z-index: 1;
+}
+
+.product__add__cart {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 2;
+}
+
+.product__add__cart a {
+    background-color: #108910;
+    padding: 6px 14px;
+    color: #fff;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: .3s;
+    font-size: 13px;
+}
+
+.product__add__cart a span:last-child {
+    display: none;
+}
+
+.product__add__cart a:hover span:last-child {
+    display: block;
+}
+
+/*-------------------- Product area css end --------------------*/
+
+
+/*-------------------- Work area css start --------------------*/
+
+.work__area {
+    padding: 60px 0px;
+}
+
+.work__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.work__title h2 {
+    margin-bottom: 0;
+}
+
+.work__single__blk {
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.work__img__blk img {
+    width: 100%;
+}
+
+.work__info {
+    padding: 30px;
+}
+
+.work__info h4 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.work__info p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.work__area .container {
+    max-width: 1140px;
+}
+
+/*-------------------- Work area css end --------------------*/
+
+
+/*-------------------- About area css start --------------------*/
+
+.about__area {
+    padding: 60px 0px;
+}
+
+.about__area .container {
+    max-width: 1140px;
+}
+
+.about__title {
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about__title h2 {
+    margin-bottom: 0;
+}
+
+.about__img__blk img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about__img__blk {
+    margin-bottom: 20px;
+}
+
+.about__single__blk {
+    background-color: #F4F4F4;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.about__single__blk h4 {
+    margin-bottom: 10px;
+}
+
+.about__single__blk p {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+/*-------------------- About area css end --------------------*/
+
+
+/*-------------------- FAQ area css start --------------------*/
+
+.faq__area {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.faq__area .container {
+    max-width: 1140px;
+}
+
+.faq__title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq__title h2 {
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.faq__main__blk .accordion-button:not(.collapsed) {
+    color: #343538;
+    background-color: #F4F4F4;
+    box-shadow: none;
+}
+
+.faq__main__blk .accordion-button {
+    font-size: 20px;
+}
+
+.faq__main__blk .accordion-button:not(.collapsed)::after {
+    filter: grayscale(100);
+}
+
+
+.faq__main__blk .accordion-button:focus {
+    box-shadow: none;
+}
+
+/*-------------------- FAQ area css end --------------------*/
+
+
+/*-------------------- Default area css start --------------------*/
+/*-------------------- Default area css end --------------------*/
