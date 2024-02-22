@@ -70,7 +70,7 @@
     }
 
     .hero__content {
-        max-width: 455px;
+        max-width: 490px;
     }
 
     .hero__main__blk {
@@ -223,11 +223,11 @@
     }
 
     .hero__content h1 {
-        font-size: 30px;
+        font-size: 27px;
     }
 
     .hero__content {
-        max-width: 390px;
+        max-width: 430px;
     }
 
     h1,
@@ -366,7 +366,7 @@
     }
 
     .hero__content h1 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .hero__content p {
@@ -374,7 +374,11 @@
     }
 
     .hero__content {
-        max-width: 80%;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 24px 24px;
+        text-align: center;
     }
 
     .hero__area {
@@ -540,7 +544,7 @@
     }
 
     .hero__content {
-        max-width: 62%;
+        max-width: 76%;
     }
 
     .work__area .container {

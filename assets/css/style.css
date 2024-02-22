@@ -285,36 +285,30 @@ a {
 
 .hero__area {
     padding: 60px 0px;
-    position: relative;
-    z-index: 1;
-    background-color: #deedd6;
+    background-image: url(../img/basic/hero_bg.jpg);
     overflow: hidden;
-}
-
-.hero__img {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-}
-
-.hero__img img {
-    width: 270px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero__content h1 {
     font-size: 41px;
-    color: #001810;
+    color: #fff;
 }
 
 .hero__content p {
-    color: #001810;
+    color: #fff;
     font-size: 14px;
     margin-bottom: 0;
 }
 
 .hero__content {
-    max-width: 535px;
+    max-width: 651px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 40px 40px;
+    background-color: rgba(0, 0, 0, 0.01);
 }
 
 /*-------------------- Hero area css end --------------------*/
