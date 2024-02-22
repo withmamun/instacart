@@ -62,6 +62,10 @@
         })
 
 
+        //------------ Nice Number -------------
+
+        $('input[type="number"]').niceNumber();
+
 
 
 

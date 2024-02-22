@@ -305,7 +305,7 @@ a {
 
 .hero__content {
     max-width: 651px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
     border-radius: 10px;
     padding: 40px 40px;
     background-color: rgba(0, 0, 0, 0.01);
@@ -472,6 +472,92 @@ a {
 
 .product__add__cart a:hover span:last-child {
     display: block;
+}
+
+
+
+.modal-dialog {
+    max-width: 70%;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.product__details__wrap {
+    display: grid;
+    grid-template-columns: 5fr 10fr;
+    gap: 70px;
+}
+
+.product__details__img img {
+    width: 100%;
+}
+
+.product__details__blk h4 {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+}
+
+.product__details__blk p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.product__details__blk ul {
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.product__details__blk ul li {
+    font-size: 14px;
+    font-weight: 400;
+    color: #343538;
+}
+
+.product__details__price span {
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.product__details__cart {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.product__cart__widget button {
+    background-color: #108910;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 45px;
+    font-size: 20px;
+}
+
+.product__details__wrap .nice-number button {
+    background-color: #108910;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.product__details__wrap .nice-number input {
+    min-width: 70px;
+    border: 1px solid #108910;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 /*-------------------- Product area css end --------------------*/

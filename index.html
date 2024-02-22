@@ -11,6 +11,7 @@
     <link href="assets/css/all.min.css" rel="stylesheet" />
     <link href="assets/css/fontawesome.css" rel="stylesheet" />
     <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/jquery.nice-number.min.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/responsive.css" rel="stylesheet" />
 
@@ -199,7 +200,8 @@
                                     <span>each(est.)</span>
                                 </div>
                                 <div class="product__title">
-                                    <a href="#" class="stretched-link">Organic Banana</a>
+                                    <a href="#" class="stretched-link" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Organic Banana</a>
                                 </div>
                                 <div class="product__qty">
                                     <span>$0.89/lb</span>
@@ -1568,6 +1570,55 @@
 
 
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Envy The Ultimate Apple Experience</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="product__details__wrap">
+                        <div class="product__details__img">
+                            <img src="assets/img/products/f1.jpg" alt="">
+                        </div>
+                        <div class="product__details__blk">
+                            <h4>Details</h4>
+                            <p>Envy is the ultimate apple experience with its extraordinary texture and crunch, balanced
+                                sweetness and beautiful golden red colors, Envy apples can be enjoyed anywhere, anytime!
+                                Best served fresh or paired with cheese boards, sandwiches, mocktails and more. Envy is
+                                an
+                                invitation to enjoy a small moment to savor and raise your expectations of what an apple
+                                can
+                                be. Bite & believe!</p>
+                            <ul>
+                                <li>Beautifully balanced sweetness</li>
+                                <li>Uplifting fresh aroma</li>
+                                <li>Delightfully satisfying crunch</li>
+                                <li>Slices naturally stay white longer</li>
+                            </ul>
+                            <div class="product__details__wrapper">
+                                <div class="product__details__price">
+                                    <span>$2.63 each (est.)</span>
+                                </div>
+                                <div class="product__details__cart">
+                                    <div class="product__count">
+                                        <input type="number">
+                                    </div>
+                                    <div class="product__cart__widget">
+                                        <button>Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 
@@ -1577,6 +1628,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.nice-number.min.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>
