@@ -27,16 +27,37 @@
             nav: true,
             navText: ['<i class="far fa-chevron-left"></i>', '<i class="far fa-chevron-right"></i>'],
             dot: false,
+            items: 6,
+            slideToScroll: 1,
+            smartSpeed: 700,
             responsive: {
-                0: {
-                    items: 3
+                320: {
+                    items: 3,
+                    margin: 10,
+                    nav: false,
                 },
-                600: {
-                    items: 4
+                450: {
+                    items: 3,
+                    margin: 10,
+                    nav: false,
                 },
-                1000: {
-                    items: 6
-                }
+                575: {
+                    items: 4,
+                    nav: false,
+                },
+                768: {
+                    items: 5,
+                },
+
+                992: {
+                    items: 5,
+                },
+                1100: {
+                    items: 5,
+                },
+                1200: {
+                    items: 6,
+                },
             }
         })
 

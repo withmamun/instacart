@@ -394,6 +394,7 @@ a {
     align-items: flex-start;
     gap: 6px;
     margin-top: 5px;
+    flex-wrap: wrap;
 }
 
 .product__title a {
