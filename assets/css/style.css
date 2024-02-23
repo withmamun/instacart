@@ -844,5 +844,154 @@ a {
 /*-------------------- Footer area css end --------------------*/
 
 
+/*-------------------- Login area css start --------------------*/
+
+.login__area {
+    padding: 60px 0px;
+}
+
+.login__area .container {
+    max-width: 400px;
+}
+
+.login__title h2 {
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.login__title {
+    margin-bottom: 20px;
+}
+
+.login__auto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login__auto a {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    border: 1px solid #343538;
+    border-radius: 40px;
+    padding: 10px 22px;
+    color: #343538;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.login__auto a img {
+    width: 22px;
+}
+
+.login__auto a:last-child img {
+    width: 28px;
+}
+
+.login__auto a:last-child {
+    padding: 7px 22px;
+}
+
+.login__auto a:hover {
+    background-color: #F4F4F4;
+}
+
+.login__others {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__others p {
+    margin: 0;
+    padding: 10px;
+    flex: 0 0 auto;
+    font-size: 16px;
+}
+
+.login__others span {
+    width: 100%;
+    height: 1px;
+    background-color: #343538;
+}
+
+.login__form__main input {
+    width: 100%;
+    height: 44px;
+    margin-bottom: 15px;
+    border-radius: 40px;
+    border: 1px solid #343538;
+    outline: none;
+    color: #343538;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 25px;
+}
+
+.login__form__main p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.login__form__main p a {
+    font-weight: 600;
+    color: #108910;
+}
+
+.login__form__main button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    background-color: #108910;
+    color: #fff;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.login__form__main button:hover {
+    background-color: #0b6f0b;
+    color: #fff;
+}
+
+.login__account__create {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.login__account__create h4 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.login__account__create a {
+    color: #108910;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.login__form__main p a:hover {
+    text-decoration: underline;
+}
+
+.login__account__create a:hover {
+    text-decoration: underline;
+}
+
+.reset__process {
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/*-------------------- Login area css end --------------------*/
+
+
 /*-------------------- Default area css start --------------------*/
 /*-------------------- Default area css end --------------------*/
