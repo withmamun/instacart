@@ -8,14 +8,20 @@
         //------------ Offcanvas -------------
 
         $('.menu-open , .offcanvas-overlay').click(function () {
-
             $('.offcanvas-area , .offcanvas-overlay').addClass('active');
-
         });
         $('.menu-close , .offcanvas-overlay').click(function () {
-
             $('.offcanvas-area , .offcanvas-overlay').removeClass('active');
+        });
 
+
+        //------------ Cart Sidebar -------------
+
+        $('.cart__box').click(function () {
+            $('.cart__wrapper').addClass('active');
+        });
+        $('.cart__close__main').click(function () {
+            $('.cart__wrapper').removeClass('active');
         });
 
 
