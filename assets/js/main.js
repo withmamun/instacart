@@ -7,7 +7,7 @@
 
         //------------ Offcanvas -------------
 
-        $('.menu-open , .offcanvas-overlay').click(function () {
+        $('.menu-open , .offcanvas-overlay, .mob__category').click(function () {
             $('.offcanvas-area , .offcanvas-overlay').addClass('active');
         });
         $('.menu-close , .offcanvas-overlay').click(function () {
@@ -17,7 +17,7 @@
 
         //------------ Cart Sidebar -------------
 
-        $('.cart__box').click(function () {
+        $('.cart__box, .mob__cart').click(function () {
             $('.cart__wrapper').addClass('active');
         });
         $('.cart__close__main').click(function () {
