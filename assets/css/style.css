@@ -112,17 +112,21 @@ a {
 }
 
 .offcanvas-area .main-menu ul li a {
-    font-size: 18px;
+    font-size: 14px;
     color: #001810;
     display: flex;
     transition: .3s;
-    padding: 14px 22px;
-    border-bottom: 1px solid #001810;
+    padding: 10px 22px;
+    border-bottom: 1px solid #f5f5f5;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
-    justify-content: space-between;
     align-items: center;
+    gap: 10px;
+}
+
+.offcanvas-area .main-menu ul li a img {
+    width: 26px;
 }
 
 .offcanvas-area .main-menu ul li .subb-menu a {
@@ -132,7 +136,7 @@ a {
 }
 
 .offcanvas-area .main-menu>ul>li:first-child a {
-    border-top: 1px solid #001810;
+    border-top: 1px solid #f5f5f5;
 }
 
 .offcanvas-area .main-menu ul li a:hover,
