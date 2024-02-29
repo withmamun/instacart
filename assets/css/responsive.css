@@ -51,6 +51,9 @@
         grid-template-columns: repeat(4, 1fr);
     }
 
+    .details__wrap {
+        padding-top: 50px;
+    }
 }
 
 
@@ -257,6 +260,9 @@
         padding: 22px;
     }
 
+    .details__wrap {
+        padding-top: 50px;
+    }
 
 
 }
@@ -526,6 +532,9 @@
         padding: 22px;
     }
 
+    .details__wrap {
+        padding-top: 50px;
+    }
 
 
 
@@ -891,6 +900,9 @@
         --bs-gutter-y: 1.0rem;
     }
 
+    .details__wrap {
+        padding-top: 30px;
+    }
 
 
 }

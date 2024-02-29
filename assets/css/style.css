@@ -555,7 +555,7 @@ a {
     font-size: 22px;
     font-weight: 600;
     text-transform: capitalize;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
 
 .product__details__blk p {
@@ -1820,6 +1820,131 @@ a {
 }
 
 /*-------------------- Checkout area css end --------------------*/
+
+
+/*-------------------- Details area css start --------------------*/
+
+.details__review__wrap {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.details__short__review {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: orange;
+}
+
+.details__review__count h5 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.details__description__full p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.details__area {
+    padding-bottom: 60px;
+    padding-top: 35px;
+}
+
+.details__review h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.details__review p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.details__review h5 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.details__review ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: orange;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.details__review__form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.details__review__form textarea {
+    border: 1px solid #e2e2e2;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 20px;
+    height: 190px;
+    resize: none;
+    width: 100%;
+    max-width: 600px;
+}
+
+.details__review__form button {
+    width: 130px;
+    height: 46px;
+    border: none;
+    outline: none;
+    background-color: #108910;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.details__wrap .nav-link {
+    padding: 12px 30px;
+    color: #333;
+    border: 1px solid #eee !important;
+}
+
+.details__wrap .nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.details__wrap .nav-pills .nav-link.active,
+.details__wrap .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #108910;
+    border-color: orange;
+}
+
+.details__wrap .nav-link:focus,
+.details__wrap .nav-link:hover {
+    color: #108910;
+}
+
+.details__wrap .nav {
+    gap: 12px;
+}
+
+.details__wrap {
+    padding-top: 20px;
+}
+
+/*-------------------- Details area css end --------------------*/
 
 
 /*-------------------- Default area css start --------------------*/
