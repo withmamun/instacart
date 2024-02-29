@@ -47,9 +47,6 @@
 
 
 
-
-
-
     .products__main__blk {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -250,6 +247,16 @@
     .products__area {
         padding: 30px 0px;
     }
+
+    .checkout__wrap {
+        grid-template-columns: 1fr 300px;
+        gap: 24px;
+    }
+
+    .checkout__right__blk {
+        padding: 22px;
+    }
+
 
 
 }
@@ -510,6 +517,14 @@
         padding-right: 10px;
     }
 
+    .checkout__wrap {
+        grid-template-columns: 1fr 300px;
+        gap: 24px;
+    }
+
+    .checkout__right__blk {
+        padding: 22px;
+    }
 
 
 
@@ -867,7 +882,14 @@
         max-width: 300px;
     }
 
+    .checkout__wrap {
+        grid-template-columns: 1fr;
+    }
 
+    .checkout__wrap .g-4,
+    .checkout__wrap .gy-4 {
+        --bs-gutter-y: 1.0rem;
+    }
 
 
 
