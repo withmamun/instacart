@@ -191,6 +191,10 @@
         font-size: 18px;
     }
 
+
+    .products__main__blk {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
 
 
@@ -384,6 +388,13 @@
 
     .modal-title {
         font-size: 16px;
+    }
+
+
+
+    .products__main__blk {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
     }
 }
 
@@ -646,6 +657,18 @@
 
 
 
+    .products__area {
+        padding: 30px 0px;
+    }
+
+    .products__area .container {
+        max-width: 400px;
+    }
+
+    .products__main__blk {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
 }
 
 
@@ -745,6 +768,21 @@
         gap: 10px;
         justify-content: flex-start;
         flex-direction: row;
+    }
+
+
+
+    .products__area {
+        padding: 30px 0px;
+    }
+
+    .products__area .container {
+        max-width: 540px;
+    }
+
+    .products__main__blk {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
 
 }

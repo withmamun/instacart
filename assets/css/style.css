@@ -1280,5 +1280,20 @@ a {
 /*-------------------- Cart area css end --------------------*/
 
 
+/*-------------------- Products area css start --------------------*/
+
+.products__area {
+    padding: 60px 0px;
+}
+
+.products__main__blk {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+}
+
+/*-------------------- Products area css end --------------------*/
+
+
 /*-------------------- Default area css start --------------------*/
 /*-------------------- Default area css end --------------------*/
