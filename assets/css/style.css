@@ -67,18 +67,20 @@ a {
 
 .menu-close {
     font-size: 18px;
-    color: #001810;
+    color: #fff;
     position: absolute;
     top: 20px;
-    left: 18px;
+    right: -16px;
     cursor: pointer;
     transition: .4s;
-    border: 1px solid #001810;
+    border: 1px solid #108910;
     width: 32px;
     height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #108910;
+    border-radius: 50%;
 }
 
 .menu-close:hover {
@@ -93,14 +95,10 @@ a {
     width: 318px;
     background: #fff;
     z-index: 1080;
-    padding-top: 35px;
     -webkit-transition: .4s;
     transition: .4s;
     visibility: hidden;
     top: 0;
-    overflow-y: scroll;
-    padding-bottom: 50px;
-    scrollbar-width: none;
     /* Firefox */
     -ms-overflow-style: none;
 }
@@ -159,7 +157,7 @@ a {
     display: block;
     padding-top: 55px;
     padding-left: 0;
-    margin-bottom: 55px;
+    margin-bottom: 30px;
     list-style: none;
 }
 
@@ -178,6 +176,12 @@ a {
 .offcanvas-overlay.active {
     opacity: .4;
     visibility: visible;
+}
+
+.offcanvas-menu {
+    overflow-y: scroll;
+    height: 100%;
+    scrollbar-width: none;
 }
 
 /*-------------------- Offcanvas area css end --------------------*/
@@ -239,6 +243,7 @@ a {
 
 .header__area {
     padding: 15px 0px;
+    background-color: beige;
 }
 
 .header__main__blk {
@@ -305,36 +310,39 @@ a {
     position: relative;
     z-index: 1;
     height: 44px;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .header__search__form input {
     width: 100%;
     height: 100%;
     border: 1px solid transparent;
-    border-radius: 5px;
-    background-color: #F4F4F4;
+    background-color: #fff;
     outline: none;
-    padding-left: 37px;
+    padding-left: 65px;
     padding-right: 18px;
     font-size: 15px;
     font-weight: 500;
 }
 
 .header__search__form input:focus {
-    border: 1px solid #343538;
+    border: 1px solid #F3A847;
 }
 
 .header__search__form button {
-    background-color: transparent;
+    background-color: #F3A847;
     border: none;
     outline: none;
     position: absolute;
-    left: 10px;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
     font-size: 14px;
-    color: #343538;
+    color: #fff;
+    width: 50px;
+    height: 100%;
 }
 
 .login__all {
@@ -591,48 +599,37 @@ a {
     margin-top: -8px;
 }
 
-
-
-
-
-
-
-
-
-
-
 /*-------------------- Header area css end --------------------*/
 
 
 /*-------------------- Cat area css start --------------------*/
 
 .cat__area {
-    padding: 25px 0px;
-}
-
-.cat__area .container {
-    max-width: 1100px;
+    padding: 8px 80px 8px 80px;
 }
 
 .cat__single__slide {
     position: relative;
     z-index: 1;
+    padding: 10px 6px;
+    transition: .3s;
+    border: 2px solid transparent;
+    border-radius: 10px;
 }
 
-.cat__img__blk {
-    width: 80px;
-    height: 80px;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
-    border-radius: 50%;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 8px;
-    margin-bottom: 8px;
+.cat__single__slide:hover {
+    border-color: #333;
 }
 
 .cat__img__blk img {
-    width: 100%;
+    height: 30px;
+    width: auto !important;
+    margin-bottom: 6px;
+}
+
+.cat__img__blk {
+    display: flex;
+    justify-content: center;
 }
 
 .cat__info {
@@ -661,24 +658,20 @@ a {
 }
 
 .cat__main__slider .owl-nav button {
-    width: 40px;
-    height: 40px;
-    background-color: #108910 !important;
+    width: 25px;
+    height: 35px;
     border-radius: 50%;
-    color: #fff !important;
+    color: #108910 !important;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: .2s;
-}
-
-.cat__main__slider .owl-nav button:hover {
-    background-color: #333 !important;
+    font-size: 25px !important;
 }
 
 .cat__main__slider .owl-prev.disabled {
-    opacity: .3;
+    opacity: .5;
 }
 
 .cat__main__slider .owl-next.disabled {
@@ -687,14 +680,14 @@ a {
 
 .cat__main__slider .owl-prev {
     position: absolute;
-    left: -50px;
+    left: -28px;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .cat__main__slider .owl-next {
     position: absolute;
-    right: -50px;
+    right: -28px;
     top: 50%;
     transform: translateY(-50%);
 }

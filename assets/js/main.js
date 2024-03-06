@@ -113,9 +113,9 @@
             nav: true,
             navText: ['<i class="far fa-chevron-left"></i>', '<i class="far fa-chevron-right"></i>'],
             dot: false,
-            items: 8,
+            items: 14,
             slideToScroll: 1,
-            smartSpeed: 700,
+            smartSpeed: 500,
             responsive: {
                 320: {
                     items: 4,
@@ -123,7 +123,7 @@
                     nav: false,
                 },
                 450: {
-                    items: 5,
+                    items: 4,
                     margin: 10,
                     nav: false,
                 },
@@ -132,17 +132,17 @@
                     nav: false,
                 },
                 768: {
-                    items: 5,
+                    items: 6,
                 },
 
                 992: {
-                    items: 6,
+                    items: 8,
                 },
                 1100: {
-                    items: 7,
+                    items: 10,
                 },
                 1200: {
-                    items: 8,
+                    items: 12,
                 },
             }
         })
