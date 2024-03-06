@@ -11,7 +11,7 @@
     <link href="assets/css/all.min.css" rel="stylesheet" />
     <link href="assets/css/fontawesome.css" rel="stylesheet" />
     <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
-    <link href="assets/css/jquery.nice-number.min.css" rel="stylesheet" />
+    <!-- <link href="assets/css/jquery.nice-number.min.css" rel="stylesheet" /> -->
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/responsive.css" rel="stylesheet" />
 
@@ -141,7 +141,9 @@
                                         </td>
                                         <td>
                                             <div class="carts__qty">
-                                                <input type="number" value="1">
+                                                <button type="button" class="number__minus">-</button>
+                                                <input type="text" id="1" value="1" />
+                                                <button type="button" class="number__plus">+</button>
                                             </div>
                                         </td>
                                         <td>
@@ -173,7 +175,9 @@
                                         </td>
                                         <td>
                                             <div class="carts__qty">
-                                                <input type="number" value="1">
+                                                <button type="button" class="number__minus">-</button>
+                                                <input type="text" id="1" value="1" />
+                                                <button type="button" class="number__plus">+</button>
                                             </div>
                                         </td>
                                         <td>
@@ -205,7 +209,9 @@
                                         </td>
                                         <td>
                                             <div class="carts__qty">
-                                                <input type="number" value="1">
+                                                <button type="button" class="number__minus">-</button>
+                                                <input type="text" id="1" value="1" />
+                                                <button type="button" class="number__plus">+</button>
                                             </div>
                                         </td>
                                         <td>
@@ -237,7 +243,9 @@
                                         </td>
                                         <td>
                                             <div class="carts__qty">
-                                                <input type="number" value="1">
+                                                <button type="button" class="number__minus">-</button>
+                                                <input type="text" id="1" value="1" />
+                                                <button type="button" class="number__plus">+</button>
                                             </div>
                                         </td>
                                         <td>
@@ -492,9 +500,17 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/jquery.nice-number.min.js"></script>
+    <!-- <script src="assets/js/jquery.nice-number.min.js"></script> -->
     <script src="assets/js/main.js"></script>
 
+    <script>
+        $('.number__plus').click(function () {
+            $(this).prev().val(+$(this).prev().val() + 1);
+        });
+        $('.number__minus').click(function () {
+            if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+        });
+    </script>
 </body>
 
 </html>

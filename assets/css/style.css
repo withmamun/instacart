@@ -1,8 +1,11 @@
 /* Base CSS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .alignleft {
@@ -262,7 +265,7 @@ a {
 }
 
 .header__logo a img {
-    width: 150px;
+    width: 100px;
 }
 
 .header__btn {
@@ -334,7 +337,306 @@ a {
     color: #343538;
 }
 
+.login__all {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(60%);
+    background-color: #fff;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    max-height: 620px;
+    padding: 15px 30px 30px 30px;
+    max-width: 400px;
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    transition: .3s;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.login__all.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(100%);
+}
+
+.login__close {
+    color: #001810;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 10px;
+    margin-left: -12px;
+}
+
+.login__close:hover {
+    color: #ff0000;
+}
+
+.login__overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    z-index: 49;
+    left: 0;
+    top: 0;
+}
+
+.login__overlay.active {
+    opacity: .4;
+    visibility: visible;
+}
+
+.signup__all {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(60%);
+    background-color: #fff;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    max-height: 580px;
+    padding: 15px 30px 30px 30px;
+    max-width: 400px;
+    z-index: 55;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    transition: .3s;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.signup__all.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(100%);
+}
+
+.signup__close {
+    color: #001810;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 10px;
+    margin-left: -12px;
+}
+
+.signup__close:hover {
+    color: #ff0000;
+}
+
+.signup__overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    z-index: 49;
+    left: 0;
+    top: 0;
+}
+
+.signup__overlay.active {
+    opacity: .4;
+    visibility: visible;
+}
+
+
+.forgot__all {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(60%);
+    background-color: #fff;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    max-height: 340px;
+    padding: 15px 30px 30px 30px;
+    max-width: 400px;
+    z-index: 55;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    transition: .3s;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.forgot__all.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(100%);
+}
+
+.forgot__close {
+    color: #001810;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 10px;
+    margin-left: -12px;
+}
+
+.forgot__close:hover {
+    color: #ff0000;
+}
+
+.forgot__overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    z-index: 49;
+    left: 0;
+    top: 0;
+}
+
+.forgot__overlay.active {
+    opacity: .4;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-------------------- Header area css end --------------------*/
+
+
+/*-------------------- Cat area css start --------------------*/
+
+.cat__area {
+    padding: 25px 0px;
+}
+
+.cat__area .container {
+    max-width: 1100px;
+}
+
+.cat__single__slide {
+    position: relative;
+    z-index: 1;
+}
+
+.cat__img__blk {
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.cat__img__blk img {
+    width: 100%;
+}
+
+.cat__info {
+    text-align: center;
+}
+
+.cat__info a {
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+}
+
+.cat__info p {
+    color: #888;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.cat__main__slider .owl-dots {
+    display: none;
+}
+
+.cat__main__slider .owl-nav button {
+    width: 40px;
+    height: 40px;
+    background-color: #108910 !important;
+    border-radius: 50%;
+    color: #fff !important;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+
+.cat__main__slider .owl-nav button:hover {
+    background-color: #333 !important;
+}
+
+.cat__main__slider .owl-prev.disabled {
+    opacity: .3;
+}
+
+.cat__main__slider .owl-next.disabled {
+    opacity: .3;
+}
+
+.cat__main__slider .owl-prev {
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cat__main__slider .owl-next {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*-------------------- Cat area css end --------------------*/
 
 
 /*-------------------- Hero area css start --------------------*/
@@ -405,7 +707,7 @@ a {
 
 .product__img__blk {
     width: 100%;
-    height: 210px;
+    height: 145px;
     overflow: hidden;
     margin-bottom: 10px;
 }
@@ -430,34 +732,40 @@ a {
 }
 
 .product__price span:first-child {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
+    color: #e43215;
 }
 
 .product__price span:last-child {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
 }
 
 .product__price {
     display: flex;
     align-items: flex-start;
-    gap: 6px;
+    gap: 4px;
     margin-top: 5px;
     flex-wrap: wrap;
 }
 
 .product__title a {
     color: #343538;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
-    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
 }
 
 .product__qty span {
     color: #848484;
     font-size: 12px;
     font-weight: 600;
+    display: block;
+    margin-top: 3px;
 }
 
 .product__main__slider .owl-dots {
@@ -501,7 +809,20 @@ a {
 .product__single__slide {
     position: relative;
     z-index: 1;
+    transition: .1s;
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 8px;
 }
+
+.product__single__slide:hover {
+    border-color: #e3e3e3;
+}
+
+
+
+
+
 
 .product__add__cart {
     position: absolute;
@@ -529,8 +850,6 @@ a {
 .product__add__cart a:hover span:last-child {
     display: block;
 }
-
-
 
 .modal-dialog {
     max-width: 70%;
@@ -1656,6 +1975,43 @@ a {
     background-color: orange;
     color: #fff;
 }
+
+
+
+
+
+.carts__qty {
+    border: 1px solid #e8e8e8;
+    padding: 4px 10px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    width: fit-content;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carts__qty button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.carts__qty input {
+    border: none;
+    outline: none;
+    color: #424646;
+    font-size: 14px;
+    max-width: 50px;
+    text-align: center;
+}
+
+
+
+
+
 
 /*-------------------- Carts area css end --------------------*/
 

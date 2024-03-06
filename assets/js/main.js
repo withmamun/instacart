@@ -15,6 +15,36 @@
         });
 
 
+        //------------ Login -------------
+
+        $('.login__btn, .already_have_acc').click(function () {
+            $('.login__all, .login__overlay').addClass('active');
+        });
+        $('.login__close, .dont_have_acc, .reset__acc').click(function () {
+            $('.login__all, .login__overlay').removeClass('active');
+        });
+
+
+        //------------ Signup -------------
+
+        $('.signup__btn, .dont_have_acc, .dont_have_acc2').click(function () {
+            $('.signup__all, .signup__overlay').addClass('active');
+        });
+        $('.signup__close, .already_have_acc').click(function () {
+            $('.signup__all, .signup__overlay').removeClass('active');
+        });
+
+
+        //------------ Forgot Pass -------------
+
+        $('.reset__acc').click(function () {
+            $('.forgot__all, .forgot__overlay').addClass('active');
+        });
+        $('.forgot__close, .dont_have_acc2').click(function () {
+            $('.forgot__all, .forgot__overlay').removeClass('active');
+        });
+
+
         //------------ Cart Sidebar -------------
 
         $('.cart__box, .mob__cart').click(function () {
@@ -33,12 +63,12 @@
             nav: true,
             navText: ['<i class="far fa-chevron-left"></i>', '<i class="far fa-chevron-right"></i>'],
             dot: false,
-            items: 6,
+            items: 7,
             slideToScroll: 1,
             smartSpeed: 700,
             responsive: {
                 320: {
-                    items: 3,
+                    items: 2,
                     margin: 10,
                     nav: false,
                 },
@@ -48,7 +78,7 @@
                     nav: false,
                 },
                 575: {
-                    items: 4,
+                    items: 3,
                     nav: false,
                 },
                 768: {
@@ -62,7 +92,52 @@
                     items: 5,
                 },
                 1200: {
+                    items: 7,
+                },
+            }
+        })
+
+
+        //------------ Hero slider -------------
+
+        $('.cat__main__slider').owlCarousel({
+            loop: false,
+            margin: 10,
+            nav: true,
+            navText: ['<i class="far fa-chevron-left"></i>', '<i class="far fa-chevron-right"></i>'],
+            dot: false,
+            items: 8,
+            slideToScroll: 1,
+            smartSpeed: 700,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            responsive: {
+                320: {
+                    items: 4,
+                    margin: 10,
+                    nav: false,
+                },
+                450: {
+                    items: 5,
+                    margin: 10,
+                    nav: false,
+                },
+                575: {
+                    items: 5,
+                    nav: false,
+                },
+                768: {
+                    items: 5,
+                },
+
+                992: {
                     items: 6,
+                },
+                1100: {
+                    items: 7,
+                },
+                1200: {
+                    items: 8,
                 },
             }
         })
