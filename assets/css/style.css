@@ -524,9 +524,72 @@ a {
     visibility: visible;
 }
 
+.header__widgets {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    justify-content: end;
+}
 
+.header__cart button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #ED1C25;
+    font-size: 28px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: .3s;
+}
 
+.header__cart button:hover {
+    color: #001810;
+}
 
+.header__cart button span {
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    font-size: 12px;
+    background-color: #108910;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header__widgets .dropdown-toggle {
+    color: #343538;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    transition: .3s;
+    line-height: 18px;
+}
+
+.header__widgets .dropdown-toggle span {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.header__widgets .dropdown-toggle:hover {
+    color: #343538;
+}
+
+.header__widgets .dropdown-toggle::after {
+    margin-left: auto;
+    margin-right: -14px;
+    margin-top: -8px;
+}
 
 
 
@@ -641,7 +704,7 @@ a {
 
 /*-------------------- Hero area css start --------------------*/
 
-.hero__area {
+.hero__single__slide {
     padding: 60px 0px;
     background-image: url(../img/basic/hero_bg.jpg);
     overflow: hidden;
@@ -819,11 +882,6 @@ a {
     border-color: #e3e3e3;
 }
 
-
-
-
-
-
 .product__add__cart {
     position: absolute;
     right: 5px;
@@ -853,6 +911,10 @@ a {
 
 .modal-dialog {
     max-width: 70%;
+}
+
+.btn-close:focus {
+    box-shadow: none;
 }
 
 .modal-title {
@@ -917,7 +979,7 @@ a {
     font-size: 20px;
 }
 
-.product__details__wrap .nice-number button {
+.product__count button {
     background-color: #108910;
     border: none;
     outline: none;
@@ -927,12 +989,18 @@ a {
     font-size: 24px;
 }
 
-.product__details__wrap .nice-number input {
-    min-width: 70px;
+.product__count input {
+    max-width: 70px;
     border: 1px solid #108910;
     outline: none;
     font-size: 20px;
     font-weight: 500;
+    height: 50px;
+    text-align: center;
+}
+
+.product__count {
+    display: flex;
 }
 
 /*-------------------- Product area css end --------------------*/
@@ -1370,24 +1438,25 @@ a {
 
 /*-------------------- Cart area css start --------------------*/
 
-.cart__box {
+.cart__box__wrap {
     position: fixed;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1055;
+}
+
+.cart__box {
     background-color: #108910;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: .3s;
-    opacity: .8;
     cursor: pointer;
 }
 
-.cart__box:hover {
-    opacity: 1;
+.cart__box.active {
+    display: flex;
 }
 
 .cart__item__added span {
@@ -1399,7 +1468,7 @@ a {
 }
 
 .cart__item__added {
-    padding: 8px 18px;
+    padding: 6px 14px;
     text-align: center;
 }
 
@@ -1407,7 +1476,7 @@ a {
     background-color: #343538;
     width: 100%;
     text-align: center;
-    padding: 6px 10px;
+    padding: 4px 6px;
 }
 
 .cart__item__price span {
@@ -1437,6 +1506,8 @@ a {
     opacity: 0;
     visibility: hidden;
     transition: .3s;
+    height: 100vh;
+    padding-bottom: 45px;
 }
 
 .cart__product__img img {
@@ -1544,6 +1615,10 @@ a {
 
 .cart__total__order {
     background-color: #343538;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .cart__total__order button {
@@ -1568,6 +1643,13 @@ a {
     height: 44px;
     align-items: center;
     width: 60%;
+    transition: .3s;
+    font-size: 18px;
+}
+
+.cart__total__order button span:first-child:hover {
+    background-color: #108910;
+    color: #fff;
 }
 
 .cart__total__order button span:last-child {
@@ -1587,13 +1669,54 @@ a {
 .cart__main__blk {
     overflow-y: scroll;
     scrollbar-width: thin;
-    max-height: 300px;
+    max-height: 100vh;
 }
 
 .cart__wrapper.active {
     right: 0;
     opacity: 1;
     visibility: visible;
+}
+
+.cart__overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    z-index: 49;
+    left: 0;
+    top: 0;
+}
+
+.cart__overlay.active {
+    opacity: .4;
+    visibility: visible;
+}
+
+.cart__box__min {
+    display: flex;
+    background-color: #108910;
+    cursor: pointer;
+    position: fixed;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .3s;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 6px;
+}
+
+.cart__box__min:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.cart__box__min.active i {
+    transform: rotate(180deg);
 }
 
 /*-------------------- Cart area css end --------------------*/
@@ -1607,7 +1730,7 @@ a {
 
 .products__main__blk {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 30px;
 }
 

@@ -47,15 +47,22 @@
 
         //------------ Cart Sidebar -------------
 
-        $('.cart__box, .mob__cart').click(function () {
-            $('.cart__wrapper').addClass('active');
+        $('.cart__box, .mob__cart, .header-cart').click(function () {
+            $('.cart__wrapper, .cart__overlay').addClass('active');
         });
         $('.cart__close__main').click(function () {
-            $('.cart__wrapper').removeClass('active');
+            $('.cart__wrapper, .cart__overlay').removeClass('active');
         });
 
 
-        //------------ Hero slider -------------
+        //------------ Cart Min Box -------------
+
+        $(".cart__box__min").click(function () {
+            $(".cart__box, .cart__box__min").toggleClass("active");
+        });
+
+
+        //------------ Product slider -------------
 
         $('.product__main__slider').owlCarousel({
             loop: false,
@@ -98,7 +105,7 @@
         })
 
 
-        //------------ Hero slider -------------
+        //------------ Category slider -------------
 
         $('.cat__main__slider').owlCarousel({
             loop: false,
@@ -109,8 +116,6 @@
             items: 8,
             slideToScroll: 1,
             smartSpeed: 700,
-            autoplay: true,
-            autoplayTimeout: 2000,
             responsive: {
                 320: {
                     items: 4,
@@ -141,6 +146,8 @@
                 },
             }
         })
+
+
 
 
         //------------ Nice Number -------------
