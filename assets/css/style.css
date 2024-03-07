@@ -1593,8 +1593,7 @@ a {
 .cart__wrapper {
     position: fixed;
     right: -100%;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
     z-index: 1056;
     transition: .3s;
     background-color: #fff;
@@ -1721,9 +1720,10 @@ a {
 .cart__total__order {
     background-color: #343538;
     position: fixed;
-    left: 0;
+    right: 0;
     bottom: 0;
     width: 100%;
+    max-width: 320px;
 }
 
 .cart__total__order button {
