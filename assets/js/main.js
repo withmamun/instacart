@@ -50,7 +50,7 @@
         $('.cart__box, .mob__cart, .header-cart').click(function () {
             $('.cart__wrapper, .cart__overlay').addClass('active');
         });
-        $('.cart__close__main').click(function () {
+        $('.cart__close__main, .cart__overlay').click(function () {
             $('.cart__wrapper, .cart__overlay').removeClass('active');
         });
 

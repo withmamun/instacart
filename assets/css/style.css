@@ -1603,7 +1603,7 @@ a {
     opacity: 0;
     visibility: hidden;
     transition: .3s;
-    height: 100vh;
+    height: 100%;
     padding-bottom: 45px;
 }
 
