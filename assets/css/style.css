@@ -157,7 +157,7 @@ a {
     display: block;
     padding-top: 55px;
     padding-left: 0;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     list-style: none;
 }
 
@@ -193,7 +193,7 @@ a {
     position: fixed;
     left: 0;
     bottom: 0;
-    z-index: 1054;
+    z-index: 40;
     width: 100%;
     background-color: #fff;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
@@ -236,13 +236,86 @@ a {
     color: #108910;
 }
 
+.search__min__wrap {
+    position: fixed;
+    left: 0;
+    top: 60px;
+    z-index: 38;
+    width: 100%;
+    transition: .4s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.search__min__wrap.active {
+    opacity: 1;
+    visibility: visible;
+    top: 30px;
+}
+
+.search__min__main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.search__min__main input {
+    width: 60%;
+    height: 44px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    padding: 0px 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #343538;
+}
+
+.search__min__main button {
+    background-color: #108910;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 24%;
+    height: 44px;
+    text-transform: uppercase;
+}
+
+.mobile__search__overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s;
+    z-index: 36;
+    left: 0;
+    top: 0;
+}
+
+.mobile__search__overlay.active {
+    opacity: .7;
+    visibility: visible;
+}
+
+.search__min__wrap {
+    display: none;
+}
+
+.mobile__search__overlay {
+    display: none;
+}
+
+
 /*-------------------- Mob area css end --------------------*/
 
 
 /*-------------------- Header area css start --------------------*/
 
 .header__area {
-    padding: 15px 0px;
+    padding: 10px 0px;
     background-color: beige;
 }
 
@@ -584,7 +657,14 @@ a {
     line-height: 18px;
 }
 
-.header__widgets .dropdown-toggle span {
+.header__widgets .dropdown-toggle h4 {
+    margin: 0;
+    color: #343538;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header__widgets .dropdown-toggle>span {
     font-weight: 600;
     font-size: 16px;
 }
@@ -596,7 +676,7 @@ a {
 .header__widgets .dropdown-toggle::after {
     margin-left: auto;
     margin-right: -14px;
-    margin-top: -8px;
+    margin-top: -10px;
 }
 
 /*-------------------- Header area css end --------------------*/
@@ -605,7 +685,7 @@ a {
 /*-------------------- Cat area css start --------------------*/
 
 .cat__area {
-    padding: 8px 80px 8px 80px;
+    padding: 8px 60px 8px 60px;
 }
 
 .cat__single__slide {
@@ -613,7 +693,7 @@ a {
     z-index: 1;
     padding: 10px 6px;
     transition: .3s;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     border-radius: 10px;
 }
 
@@ -650,7 +730,7 @@ a {
     color: #888;
     font-size: 13px;
     font-weight: 400;
-    margin-bottom: 0;
+    margin-bottom: -3px;
 }
 
 .cat__main__slider .owl-dots {
@@ -1426,6 +1506,30 @@ a {
     font-weight: 400;
 }
 
+.pass__blk {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 15px;
+}
+
+.pass__blk span {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+}
+
+.pass__blk input {
+    margin-bottom: 0;
+    padding-right: 40px !important;
+}
+
+
+
 /*-------------------- Login area css end --------------------*/
 
 
@@ -1588,6 +1692,14 @@ a {
     outline: none;
     padding: 0;
     min-width: 30px;
+}
+
+.cart__product__increase .nice-number button:first-child {
+    font-size: 26px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cart__product__increase .nice-number input {
@@ -2123,11 +2235,6 @@ a {
     max-width: 50px;
     text-align: center;
 }
-
-
-
-
-
 
 /*-------------------- Carts area css end --------------------*/
 

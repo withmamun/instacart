@@ -62,6 +62,13 @@
         });
 
 
+        //------------ Mobile Search -------------
+
+        $(".mobile__search").click(function () {
+            $(".search__min__wrap, .mobile__search__overlay").toggleClass("active");
+        });
+
+
         //------------ Product slider -------------
 
         $('.product__main__slider').owlCarousel({
@@ -91,7 +98,6 @@
                 768: {
                     items: 5,
                 },
-
                 992: {
                     items: 5,
                 },
@@ -129,17 +135,15 @@
                 },
                 575: {
                     items: 5,
-                    nav: false,
                 },
                 768: {
                     items: 6,
                 },
-
                 992: {
-                    items: 8,
+                    items: 7,
                 },
                 1100: {
-                    items: 10,
+                    items: 7,
                 },
                 1200: {
                     items: 12,
