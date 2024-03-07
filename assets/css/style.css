@@ -1720,10 +1720,15 @@ a {
 .cart__total__order {
     background-color: #343538;
     position: fixed;
-    right: 0;
+    right: -100%;
     bottom: 0;
     width: 100%;
     max-width: 320px;
+    transition: .3s;
+}
+
+.cart__wrapper.active .cart__total__order {
+    right: 0;
 }
 
 .cart__total__order button {
