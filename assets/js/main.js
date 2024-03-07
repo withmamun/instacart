@@ -7,7 +7,7 @@
 
         //------------ Offcanvas -------------
 
-        $('.menu-open , .offcanvas-overlay, .mob__category').click(function () {
+        $('.menu-open, .mob__category').click(function () {
             $('.offcanvas-area , .offcanvas-overlay').addClass('active');
         });
         $('.menu-close , .offcanvas-overlay').click(function () {
