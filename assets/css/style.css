@@ -2428,125 +2428,81 @@ a {
 
 /*-------------------- Details area css start --------------------*/
 
-.details__review__wrap {
+
+.re__product__main__slider .owl-dots {
+    display: none;
+}
+
+.re__product__main__slider .owl-nav button {
+    background-color: #E8E9EB !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #343538 !important;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.re__product__main__slider .owl-nav button:hover {
+    background-color: #108910 !important;
+    color: #fff !important;
+}
+
+.re__product__main__slider .owl-nav {
+    position: absolute;
+    right: 0;
+    top: -54px;
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 12px;
+    gap: 6px;
 }
 
-.details__short__review {
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    color: orange;
+.re__product__main__slider .owl-prev.disabled {
+    opacity: .5;
+    cursor: default !important;
 }
 
-.details__review__count h5 {
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 0;
+.re__product__main__slider .owl-next.disabled {
+    opacity: .5;
+    cursor: default !important;
 }
 
-.details__description__full p {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 15px;
+.modal__accor__details .accordion-button:focus {
+    border-color: #999;
+    box-shadow: none;
 }
 
-.details__area {
-    padding-bottom: 60px;
-    padding-top: 35px;
+.modal__accor__details .accordion-item {
+    border: 1px solid #999;
 }
 
-.details__review h4 {
+.modal__accor__details .accordion-button {
+    padding: 14px 18px;
     font-size: 18px;
-    margin-bottom: 5px;
+    color: #343538;
 }
 
-.details__review p {
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-
-.details__review h5 {
-    font-size: 18px;
-    margin-bottom: 4px;
-}
-
-.details__review ul {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    color: orange;
-    font-size: 16px;
-    margin-bottom: 24px;
-}
-
-.details__review__form label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.details__review__form textarea {
-    border: 1px solid #e2e2e2;
-    padding: 20px;
-    font-size: 16px;
-    font-weight: 400;
-    display: block;
-    margin-bottom: 20px;
-    height: 190px;
-    resize: none;
-    width: 100%;
-    max-width: 600px;
-}
-
-.details__review__form button {
-    width: 130px;
-    height: 46px;
-    border: none;
-    outline: none;
-    background-color: #108910;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-.details__wrap .nav-link {
-    padding: 12px 30px;
-    color: #333;
-    border: 1px solid #eee !important;
-}
-
-.details__wrap .nav-pills .nav-link {
-    border-radius: 0;
-}
-
-.details__wrap .nav-pills .nav-link.active,
-.details__wrap .nav-pills .show>.nav-link {
+.modal__accor__details .accordion-button:not(.collapsed) {
     color: #fff;
     background-color: #108910;
-    border-color: orange;
 }
 
-.details__wrap .nav-link:focus,
-.details__wrap .nav-link:hover {
-    color: #108910;
+.modal__accor__details .accordion-button:not(.collapsed)::after {
+    filter: grayscale(100) brightness(100);
 }
 
-.details__wrap .nav {
-    gap: 12px;
+.modal__accor__content ul li {
+    color: #343538;
+    font-weight: 400;
 }
 
-.details__wrap {
-    padding-top: 20px;
-}
+
+
+
+
+
+
+
 
 /*-------------------- Details area css end --------------------*/
 
