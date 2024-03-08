@@ -184,6 +184,10 @@ a {
     scrollbar-width: none;
 }
 
+.offcanvas-menu::-webkit-scrollbar {
+    display: none;
+}
+
 /*-------------------- Offcanvas area css end --------------------*/
 
 
@@ -236,77 +240,6 @@ a {
     color: #108910;
 }
 
-.search__min__wrap {
-    position: fixed;
-    left: 0;
-    top: 60px;
-    z-index: 38;
-    width: 100%;
-    transition: .4s;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.search__min__wrap.active {
-    opacity: 1;
-    visibility: visible;
-    top: 30px;
-}
-
-.search__min__main {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-}
-
-.search__min__main input {
-    width: 60%;
-    height: 44px;
-    border: none;
-    outline: none;
-    background-color: #fff;
-    padding: 0px 15px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #343538;
-}
-
-.search__min__main button {
-    background-color: #108910;
-    color: #fff;
-    border: none;
-    outline: none;
-    width: 24%;
-    height: 44px;
-    text-transform: uppercase;
-}
-
-.mobile__search__overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: 0;
-    visibility: hidden;
-    transition: .2s;
-    z-index: 36;
-    left: 0;
-    top: 0;
-}
-
-.mobile__search__overlay.active {
-    opacity: .7;
-    visibility: visible;
-}
-
-.search__min__wrap {
-    display: none;
-}
-
-.mobile__search__overlay {
-    display: none;
-}
 
 
 /*-------------------- Mob area css end --------------------*/
@@ -779,7 +712,6 @@ a {
 
 .hero__single__slide {
     padding: 60px 0px;
-    background-image: url(../img/basic/hero_bg.jpg);
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
@@ -802,7 +734,7 @@ a {
     backdrop-filter: blur(8px);
     border-radius: 10px;
     padding: 40px 40px;
-    background-color: rgba(0, 0, 0, 0.01);
+    background-color: rgba(0, 0, 0, 0.08);
 }
 
 /*-------------------- Hero area css end --------------------*/

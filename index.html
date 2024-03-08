@@ -58,31 +58,13 @@
     <!--------- Offcanvas area end --------->
 
 
-    <!--------- Search Mobile area start --------->
-    <div class="search__min__wrap">
-        <form action="">
-            <div class="search__min__main">
-                <input type="text" placeholder="Search products and stores">
-                <button>search</button>
-            </div>
-        </form>
-    </div>
-    <div class="mobile__search__overlay"></div>
-    <!--------- Search Mobile area end --------->
-
-
     <!--------- Mob area start --------->
     <div class="mob__wrap">
         <ul>
-            <li><a href="index.html"><span><i class="fas fa-home"></i></span><span>home</span></a></li>
-            <li><a href="javascript:void(0)" class="mobile__search"><span><i
-                            class="fas fa-search"></i></span><span>Search</span></a>
-            </li>
+            <li><a href="index.html"><span><i class="fal fa-home"></i></span><span>Home</span></a></li>
             <li><a href="javascript:void(0)" class="mob__category"><span><i
-                            class="fas fa-th-large"></i></span><span>Categories</span></a></li>
-            <li><a href="javascript:void(0)" class="mob__cart"><span><i
-                            class="fas fa-cart-plus"></i></span><span>cart</span></a></li>
-            <li><a href="javascript:void(0)"><span><i class="fas fa-user"></i></span><span>user</span></a></li>
+                            class="far fa-heart"></i></span><span>Wishlist</span></a></li>
+            <li><a href="javascript:void(0)"><span><i class="fal fa-user"></i></span><span>Profile</span></a></li>
         </ul>
     </div>
     <!--------- Mob area end --------->
@@ -307,7 +289,38 @@
         <section class="hero__area">
             <div class="hero__main__slider swiper">
                 <div class="hero__main__wrapper swiper-wrapper">
-                    <div class="hero__single__slide swiper-slide">
+                    <div class="hero__single__slide swiper-slide"
+                        style="background-image: url(assets/img/basic/hero_bg.jpg);">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="hero__main__blk">
+                                        <div class="hero__content">
+                                            <h1>Order groceries for delivery or pickup today</h1>
+                                            <p>Whatever you want from local stores, brought right to your door.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__single__slide swiper-slide"
+                        style="background-image: url(assets/img/basic/hero_bg2.jpg);">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="hero__main__blk">
+                                        <div class="hero__content">
+                                            <h1>Order groceries for delivery or pickup today</h1>
+                                            <p>Whatever you want from local stores, brought right to your door.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__single__slide swiper-slide"
+                        style="background-image: url(assets/img/basic/hero_bg3.jpg);">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -1974,9 +1987,14 @@
         let swiperTestimonial = new Swiper(".hero__main__slider", {
             spaceBetween: 10,
             loop: true,
+            speed: 2000,
+            fadeEffect: {
+                crossFade: true
+            },
+            effect: "fade",
             grabCursor: false,
             autoplay: {
-                delay: 2500,
+                delay: 2000,
                 disableOnInteraction: false,
             },
             breakpoints: {

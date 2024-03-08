@@ -62,12 +62,6 @@
         });
 
 
-        //------------ Mobile Search -------------
-
-        $(".mobile__search").click(function () {
-            $(".search__min__wrap, .mobile__search__overlay").toggleClass("active");
-        });
-
 
         //------------ Product slider -------------
 
