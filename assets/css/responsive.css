@@ -572,10 +572,6 @@
         padding-bottom: 100px;
     }
 
-    .header__menu {
-        display: none;
-    }
-
     .mob__wrap {
         display: block;
     }
@@ -945,21 +941,22 @@
         padding-bottom: 15px;
     }
 
-    .search__min__wrap {
-        display: block;
-    }
-
-    .mobile__search__overlay {
-        display: block;
-    }
-
-    .header__cart {
-        display: none;
-    }
-
     .header__profile {
         margin-right: 12px;
     }
+
+    .cart__box__wrap {
+        display: none;
+    }
+
+    .header__area {
+        display: none;
+    }
+
+    .mb__header__area {
+        display: block;
+    }
+
 
 
 }
