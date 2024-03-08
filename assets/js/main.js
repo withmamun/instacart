@@ -172,12 +172,10 @@
                 320: {
                     items: 4,
                     margin: 10,
-                    nav: false,
                 },
                 450: {
                     items: 4,
                     margin: 10,
-                    nav: false,
                 },
                 575: {
                     items: 5,

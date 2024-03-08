@@ -765,7 +765,7 @@
     .product__cart__widget button {
         width: 132px;
         height: 42px;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .product__details__wrap .nice-number button {
@@ -914,7 +914,11 @@
     }
 
     .cat__area {
-        padding: 5px 0px 5px 0px;
+        padding: 5px 15px 5px 15px;
+    }
+
+    .cat__main__slider .owl-nav button {
+        font-size: 18px !important;
     }
 
     .cat__single__slide {
@@ -963,6 +967,13 @@
         font-size: 15px;
     }
 
+    .modal__accor__content p {
+        font-size: 14px;
+    }
+
+    .modal__accor__content ul li {
+        font-size: 14px;
+    }
 
 }
 
