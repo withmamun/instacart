@@ -1020,8 +1020,14 @@ a {
     gap: 70px;
 }
 
+.product__details__img {
+    height: 270px;
+}
+
 .product__details__img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .product__details__blk h4 {
@@ -2496,6 +2502,14 @@ a {
     font-weight: 400;
 }
 
+.modal__related__products .product__area {
+    padding: 20px 0px;
+}
+
+.modal__accor__details {
+    margin-top: 20px;
+}
+
 /*-------------------- Details area css end --------------------*/
 
 
@@ -2554,8 +2568,9 @@ a {
     z-index: 1;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 80px;
-    padding-bottom: 40px;
+    padding-top: 75px;
+    padding-bottom: 24px;
+    overflow: hidden;
 }
 
 .profile__main__blk::after {
@@ -2647,18 +2662,18 @@ a {
 }
 
 .profile__wrapper {
-    padding: 30px 15px;
+    padding: 18px 15px 30px 15px;
 }
 
 .profile__single__blk {
     background-color: #fff;
-    padding: 20px 20px;
+    padding: 14px 20px;
     border-radius: 6px;
     margin-bottom: 10px;
 }
 
 .profile__single__blk h5 {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     font-size: 18px;
     text-transform: capitalize;
 }

@@ -760,13 +760,12 @@
     .product__details__cart {
         gap: 10px;
         justify-content: center;
-        flex-direction: column;
     }
 
     .product__cart__widget button {
-        width: 164px;
-        height: 44px;
-        font-size: 16px;
+        width: 132px;
+        height: 42px;
+        font-size: 14px;
     }
 
     .product__details__wrap .nice-number button {
@@ -789,6 +788,8 @@
         max-width: 200px;
         margin-left: auto;
         margin-right: auto;
+        height: 175px;
+        margin-bottom: 10px;
     }
 
     .modal-title {
@@ -922,11 +923,12 @@
     }
 
     .product__count button {
-        height: 44px;
+        height: 42px;
+        width: 36px;
     }
 
     .product__count input {
-        height: 44px;
+        height: 42px;
     }
 
     .cat__img__blk img {
@@ -957,6 +959,9 @@
         display: block;
     }
 
+    .modal__accor__details .accordion-button {
+        font-size: 15px;
+    }
 
 
 }
@@ -1107,11 +1112,4 @@
 
 
 /* SM Small Device :320px. */
-@media only screen and (min-width: 320px) and (max-width: 575px) {
-
-    .modal-dialog {
-        margin: 0;
-    }
-
-
-}
+@media only screen and (min-width: 320px) and (max-width: 575px) {}
