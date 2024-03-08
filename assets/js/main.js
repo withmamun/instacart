@@ -15,6 +15,16 @@
         });
 
 
+        //------------ Profile Sidebar -------------
+
+        $('.profile-open').click(function () {
+            $('.profile__wrap , .profile__overlay').addClass('active');
+        });
+        $('.profile__close, .profile__overlay').click(function () {
+            $('.profile__wrap , .profile__overlay').removeClass('active');
+        });
+
+
         //------------ Login -------------
 
         $('.login__btn, .already_have_acc').click(function () {

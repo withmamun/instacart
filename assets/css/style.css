@@ -2496,15 +2496,219 @@ a {
     font-weight: 400;
 }
 
-
-
-
-
-
-
-
-
 /*-------------------- Details area css end --------------------*/
+
+
+/*-------------------- Profile area css start --------------------*/
+
+.profile__overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    z-index: 99;
+    left: 0;
+    top: 0;
+}
+
+.profile__overlay.active {
+    opacity: .5;
+    visibility: visible;
+}
+
+.profile__wrap {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    background-color: #f0f0f0;
+    z-index: 999;
+    transition: .4s;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    visibility: hidden;
+}
+
+.profile__wrap.active {
+    left: 0;
+    visibility: visible;
+}
+
+.profile__wrap::-webkit-scrollbar {
+    display: none;
+}
+
+.profile__main__blk {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-image: linear-gradient(to bottom, #0aca0a, #109310);
+    border-radius: 0px 0px 40px 0px;
+    position: relative;
+    z-index: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.profile__main__blk::after {
+    position: absolute;
+    right: -1px;
+    top: -24px;
+    width: 59px;
+    height: 100px;
+    border: 6px solid #fff;
+    content: "";
+    z-index: -1;
+    opacity: .2;
+    transform: rotate(50deg);
+    border-radius: 15px;
+}
+
+.profile__main__blk::before {
+    position: absolute;
+    right: 86px;
+    top: -40px;
+    width: 59px;
+    height: 100px;
+    border: 6px solid #fff;
+    content: "";
+    z-index: -1;
+    opacity: .2;
+    transform: rotate(50deg);
+    border-radius: 15px;
+}
+
+.profile__close {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.profile__left__blk {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.profile__img__blk {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    flex: 0 0 auto;
+}
+
+.profile__img__blk img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile__user__info h4 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.profile__user__info p {
+    margin-bottom: 0;
+    font-size: 15px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.profile__right__blk a {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.profile__right__blk a:hover {
+    color: #fff;
+}
+
+.profile__wrapper {
+    padding: 30px 15px;
+}
+
+.profile__single__blk {
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.profile__single__blk h5 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.profile__single__blk ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.profile__single__blk ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #343538;
+    transition: .3s;
+    text-transform: capitalize;
+}
+
+.profile__single__blk ul li a:hover {
+    color: #108910;
+}
+
+.profile__logout a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #343538;
+    transition: .3s;
+    text-transform: capitalize;
+    background-color: #fff;
+    padding: 12px 20px;
+    border-radius: 6px;
+}
+
+.profile__logout a:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+/*-------------------- Profile area css end --------------------*/
 
 
 /*-------------------- Default area css start --------------------*/
