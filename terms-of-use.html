@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/fontawesome.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/jquery.nice-number.min.css" rel="stylesheet" />
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+
+    <title>Bsamcart</title>
+    <!-- <link rel="icon" type="image/x-icon" href="assets/img/basic/fav-ico.png"> -->
+</head>
+
+<body>
+
+
+    <!--------- Offcanvas area start --------->
+    <div class="offcanvas-area">
+        <div class="menu-close">
+            <i class="far fa-chevron-left"></i>
+        </div>
+        <div class="offcanvas-menu">
+            <div class="main-menu">
+                <ul class="d-block">
+                    <li><a href=""><img src="assets/img/basic/fruits.png" alt="">Food</a></li>
+                    <li><a href=""><img src="assets/img/basic/fruits.png" alt="">Pantry</a></li>
+                    <li><a href=""><img src="assets/img/basic/fruits.png" alt="">Seafood</a></li>
+                    <li><a href=""><img src="assets/img/basic/fruits.png" alt="">Baked goods</a></li>
+                    <li><a href=""><img src="assets/img/basic/fruits.png" alt="">Dairy</a></li>
+                    <li><a href=""><img src="assets/img/basic/fruits.png" alt="">Fresh produce</a></li>
+                    <li><a href=""><img src="assets/img/basic/fruits.png" alt="">Deli</a></li>
+                    <li><a href=""><img src="assets/img/basic/fruits.png" alt="">Frozen food</a></li>
+                    <li><a href=""><img src="assets/img/basic/fruits.png" alt="">Meat</a></li>
+                    <li><a href=""><img src="assets/img/basic/fruits.png" alt="">Meat alternatives</a></li>
+                    <li><a href=""><img src="assets/img/basic/fruits.png" alt="">Beverages</a></li>
+                    <li><a href=""><img src="assets/img/basic/fruits.png" alt="">Liquor</a></li>
+                    <li><a href=""><img src="assets/img/basic/fruits.png" alt="">Coffee</a></li>
+                    <li><a href=""><img src="assets/img/basic/fruits.png" alt="">Juice</a></li>
+                    <li><a href=""><img src="assets/img/basic/fruits.png" alt="">Soda</a></li>
+                    <li><a href=""><img src="assets/img/basic/fruits.png" alt="">Tea</a></li>
+                    <li><a href=""><img src="assets/img/basic/fruits.png" alt="">Water</a></li>
+                    <li><a href=""><img src="assets/img/basic/fruits.png" alt="">Organic grocery</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas-overlay"></div>
+    <!--------- Offcanvas area end --------->
+
+
+    <!--------- Mob area start --------->
+    <div class="mob__wrap">
+        <ul>
+            <li><a href="index.html"><span><i class="fal fa-home"></i></span><span>Home</span></a></li>
+            <li><a href="javascript:void(0)"><span><i class="far fa-heart"></i></span><span>Wishlist</span></a></li>
+            <li><a href="javascript:void(0)" class="login__btn"><span><i
+                            class="fal fa-sign-in-alt"></i></span><span>Login/Signup</span></a></li>
+            <li><a href="javascript:void(0)" class="profile-open"><span><i
+                            class="fal fa-user"></i></span><span>Profile</span></a></li>
+        </ul>
+    </div>
+    <!--------- Mob area end --------->
+
+
+    <!--------- Header area start --------->
+    <section class="header__area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header__main__blk">
+                        <div class="header__left__blk">
+                            <div class="header__menu menu-open">
+                                <span><i class="far fa-bars"></i></span>
+                            </div>
+                            <div class="header__logo">
+                                <a href="index.html"><img src="assets/img/basic/bsam-logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="header__search">
+                            <div class="header__search__form">
+                                <button><i class="far fa-search"></i></button>
+                                <input type="text" placeholder="Search bsamcart.co">
+                            </div>
+                        </div>
+                        <div class="header__right__blk">
+                            <!-- <div class="header__btn">
+                                <a href="javascript:void(0)" class="login__btn">Log in</a>
+                                <a href="javascript:void(0)" class="signup__btn">Sign up</a>
+                            </div> -->
+                            <div class="header__widgets">
+                                <div class="header__profile">
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <h4>Hello, <span>Mamun</span></h4> <span>Account & Lists</span>
+                                        </a>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                                            <li><a class="dropdown-item" href="#">Setting</a></li>
+                                            <li><a class="dropdown-item" href="#">Change Password</a></li>
+                                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="header__cart">
+                                    <button class="header-cart"><i
+                                            class="fas fa-shopping-cart"></i><span>2</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------- Header area end --------->
+
+
+    <!--------- Header Mobile area start --------->
+    <section class="mb__header__area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="mb__header__main__blk">
+                        <div class="mb__header__category">
+                            <div class="header__menu menu-open">
+                                <span><i class="far fa-bars"></i></span>
+                            </div>
+                        </div>
+                        <div class="mb__header__search__wrap">
+                            <form action="">
+                                <div class="mb__header__search">
+                                    <button><i class="far fa-search"></i></button>
+                                    <input type="text" placeholder="Search bsamcart.co">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="mb__header__cart">
+                            <div class="header__cart">
+                                <button class="header-cart"><i class="fas fa-shopping-cart"></i><span>2</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------- Header Mobile area end --------->
+
+
+    <!--------- Main area start --------->
+    <main class="main overflow-hidden">
+
+        <!--------- Privacy area start --------->
+        <section class="privacy__area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="privacy__title">
+                            <h2>Terms of use</h2>
+                            <p>Last updated: August 15, 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="privacy__main__blk">
+                            <div class="privacy__single__blk">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ducimus voluptatem
+                                    deserunt facere, reprehenderit ex voluptas expedita libero deleniti ut dicta nulla
+                                    aspernatur ab ratione totam nostrum corrupti odio id accusamus porro! In possimus
+                                    aperiam corrupti iste architecto cumque similique?</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod eum quas
+                                    voluptate, possimus atque optio necessitatibus aliquid assumenda placeat aut
+                                    voluptatum quae magnam doloribus et aperiam cumque sunt at, rem distinctio pariatur
+                                    facere quisquam. Nostrum quas doloremque voluptate culpa modi ab nulla aliquam nisi.
+                                    Possimus alias in error labore!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, magni?</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptatibus
+                                    consequuntur omnis modi dolorem, dolorum esse voluptatum non optio ducimus mollitia
+                                    unde repudiandae fugiat vero soluta distinctio molestias sed, necessitatibus
+                                    explicabo commodi labore. Unde perspiciatis dolores ipsum non quaerat omnis, illo
+                                    quam. Ipsum, libero itaque! Quas vitae impedit atque temporibus esse neque quasi in,
+                                    facilis doloremque amet assumenda fuga consequatur eligendi tempore distinctio aut
+                                    quo mollitia quis officia eos, earum molestias quam, ea molestiae! Animi aperiam
+                                    molestias repudiandae consequuntur natus ducimus molestiae consectetur odit. Veniam
+                                    mollitia quasi explicabo officiis? Dignissimos et illum consectetur ipsum veniam
+                                    consequatur nam assumenda natus adipisci?</p>
+                            </div>
+                            <div class="privacy__single__blk">
+                                <h4>Your Use of the Services</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ducimus voluptatem
+                                    deserunt facere, reprehenderit ex voluptas expedita libero deleniti ut dicta nulla
+                                    aspernatur ab ratione totam nostrum corrupti odio id accusamus porro! In possimus
+                                    aperiam corrupti iste architecto cumque similique?</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod eum quas
+                                    voluptate, possimus atque optio necessitatibus aliquid assumenda placeat aut
+                                    voluptatum quae magnam doloribus et aperiam cumque sunt at, rem distinctio pariatur
+                                    facere quisquam. Nostrum quas doloremque voluptate culpa modi ab nulla aliquam nisi.
+                                    Possimus alias in error labore!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, magni?</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptatibus
+                                    consequuntur omnis modi dolorem, dolorum esse voluptatum non optio ducimus mollitia
+                                    unde repudiandae fugiat vero soluta distinctio molestias sed, necessitatibus
+                                    explicabo commodi labore. Unde perspiciatis dolores ipsum non quaerat omnis, illo
+                                    quam. Ipsum, libero itaque! Quas vitae impedit atque temporibus esse neque quasi in,
+                                    facilis doloremque amet assumenda fuga consequatur eligendi tempore distinctio aut
+                                    quo mollitia quis officia eos, earum molestias quam, ea molestiae! Animi aperiam
+                                    molestias repudiandae consequuntur natus ducimus molestiae consectetur odit. Veniam
+                                    mollitia quasi explicabo officiis? Dignissimos et illum consectetur ipsum veniam
+                                    consequatur nam assumenda natus adipisci?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------- Privacy area end --------->
+
+    </main>
+    <!--------- Main area end --------->
+
+
+    <!--------- Footer area start --------->
+    <section class="footer__area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__main__blk">
+                        <div class="footer__left__blk">
+                            <div class="footer__logo">
+                                <span><img src="assets/img/basic/fav-ico.png" alt="">Get deliveries with
+                                    Bsamcart</span>
+                            </div>
+                            <div class="footer__app">
+                                <a href="#"><i class="fab fa-apple"></i>iOS</a>
+                                <a href="#"><i class="fab fa-google-play"></i>Android</a>
+                            </div>
+                        </div>
+                        <div class="footer__right__blk">
+                            <div class="footer__single__blk">
+                                <h4>Top departments</h4>
+                                <ul>
+                                    <li><a href="#">Fresh Produce</a></li>
+                                    <li><a href="#">Dairy Products</a></li>
+                                    <li><a href="#">Meat</a></li>
+                                    <li><a href="#">Meat Alternatives</a></li>
+                                    <li><a href="#">Seafood</a></li>
+                                    <li><a href="#">Pantry Food</a></li>
+                                    <li><a href="#">Baked Goods</a></li>
+                                    <li><a href="#">View all departments</a></li>
+                                    <li><a href="#">Gift Delivery Near Me</a></li>
+                                    <li><a href="#">Flower Delivery Near Me</a></li>
+                                    <li><a href="#">Asian Groceries</a></li>
+                                    <li><a href="#">Business Office Food</a></li>
+                                    <li><a href="#">Coffee Shop Supplies</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__single__blk">
+                                <h4>More departments</h4>
+                                <ul>
+                                    <li><a href="#">Alcohol</a></li>
+                                    <li><a href="#">Alcohol by location</a></li>
+                                    <li><a href="#">Frozen Food</a></li>
+                                    <li><a href="#">Beverages</a></li>
+                                    <li><a href="#">Organic Grocery</a></li>
+                                    <li><a href="#">Household Essentials</a></li>
+                                    <li><a href="#">Office Supplies</a></li>
+                                    <li><a href="#">Beauty Products</a></li>
+                                    <li><a href="#">Late Night Delivery</a></li>
+                                    <li><a href="#">Grocery Pickup Near Me</a></li>
+                                    <li><a href="#">Latin Groceries</a></li>
+                                    <li><a href="#">Business Office snacks</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__single__blk">
+                                <h4>Instacart programs</h4>
+                                <ul>
+                                    <li><a href="#">Instacart+</a></li>
+                                    <li><a href="#">Instacart Business</a></li>
+                                    <li><a href="#">EBT SNAP</a></li>
+                                    <li><a href="#">Fresh Funds</a></li>
+                                    <li><a href="#">Promos & Coupons</a></li>
+                                    <li><a href="#">Gift Cards</a></li>
+                                    <li><a href="#">Grocery Budget Calculator</a></li>
+                                    <li><a href="#">Instacart Ads</a></li>
+                                    <li><a href="#">Instacart Connect</a></li>
+                                    <li><a href="#">Cookie Delivery Near Me</a></li>
+                                    <li><a href="#">Business Office Supplies</a></li>
+                                    <li><a href="#">Home Depot Delivery</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__single__blk">
+                                <h4>Get to know us</h4>
+                                <ul>
+                                    <li><a href="#">Press</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Ideas & Guides</a></li>
+                                    <li><a href="#">Help</a></li>
+                                    <li><a href="#">Shop By Location</a></li>
+                                    <li><a href="#">Beauty Supplies Near Me</a></li>
+                                    <li><a href="#">Pet Supplies Near Me</a></li>
+                                    <li><a href="#">Convenience Store Near Me</a></li>
+                                    <li><a href="#">Cake Delivery Near Me</a></li>
+                                    <li><a href="#">Caper Cart</a></li>
+                                    <li><a href="#">How Does Instacart Work</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__main__blk">
+                        <div class="footer__left__blk">
+                            <div class="footer__logo">
+                                <span><img src="assets/img/basic/shp.png" alt="">Become a Shopper</span>
+                            </div>
+                            <div class="footer__app">
+                                <a href="#"><i class="fab fa-apple"></i>iOS</a>
+                                <a href="#"><i class="fab fa-google-play"></i>Android</a>
+                            </div>
+                        </div>
+                        <div class="footer__right__blk">
+                            <div class="footer__single__blk">
+                                <h4>Make money with us</h4>
+                                <ul>
+                                    <li><a href="#">Shopper Opportunities</a></li>
+                                    <li><a href="#">Become a Shopper</a></li>
+                                    <li><a href="#">In-Store Employee For Instacart</a></li>
+                                    <li><a href="#">Earnings</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__single__blk">
+                                <h4>Top cities</h4>
+                                <ul>
+                                    <li><a href="#">Los Angeles</a></li>
+                                    <li><a href="#">New York City</a></li>
+                                    <li><a href="#">Chicago</a></li>
+                                    <li><a href="#">Washington D.C.</a></li>
+                                    <li><a href="#">San Francisco</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__single__blk">
+                                <h4>More cities</h4>
+                                <ul>
+                                    <li><a href="#">Miami</a></li>
+                                    <li><a href="#">Las Vegas</a></li>
+                                    <li><a href="#">Atlanta</a></li>
+                                    <li><a href="#">Dallas</a></li>
+                                    <li><a href="#">View all Job Locations</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__single__blk">
+                                <h4>Shopper help</h4>
+                                <ul>
+                                    <li><a href="#">Help</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Safety</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__wrapper">
+                        <div class="footer__copyright">
+                            <h4>Legal</h4>
+                        </div>
+                        <div class="footer__privacy">
+                            <ul>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__social">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__res">
+                        <p>Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other
+                            countries.
+                            App Store is a service mark of Apple Inc. Android, Google Play and the Google Play logo are
+                            trademarks of Google LLC.
+                            Terms for Free Delivery (First Order): Offer valid on first order made through Instacart
+                            with a
+                            minimum basket size as set forth in the offer promotion. Offer expires on the date indicated
+                            in the
+                            user’s account settings or displayed in the offer promotion. <a href="#">View more details
+                                here.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------- Footer area end --------->
+
+
+    <!--------- Cart area start --------->
+    <div class="cart__wrap">
+        <div class="cart__box__wrap">
+            <span class="cart__box__min"><i class="far fa-chevron-left"></i></span>
+            <div class="cart__box">
+                <div class="cart__item__added">
+                    <span><i class="fal fa-cart-plus"></i></span>
+                    <p>2 items</p>
+                </div>
+                <div class="cart__item__price">
+                    <span>$245</span>
+                </div>
+            </div>
+        </div>
+        <div class="cart__wrapper">
+            <div class="cart__topbar">
+                <div class="cart__topbar__items">
+                    <span>2 Items</span>
+                </div>
+                <div class="cart__close">
+                    <span class="cart__close__main">close</span>
+                </div>
+            </div>
+            <div class="cart__main__blk">
+                <div class="cart__single__blk">
+                    <div class="cart__product__increase">
+                        <input type="number" value="1">
+                    </div>
+                    <div class="cart__product__details">
+                        <div class="cart__product__img">
+                            <img src="assets/img/products/f1.jpg" alt="">
+                        </div>
+                        <div class="cart__product__info">
+                            <h4>Organic Banana</h4>
+                            <p>$0.89/lb</p>
+                        </div>
+                        <div class="product__cart__single__total">
+                            <span>$245</span>
+                        </div>
+                    </div>
+                    <div class="cart__product__remove">
+                        <span><i class="far fa-times"></i></span>
+                    </div>
+                </div>
+                <div class="cart__single__blk">
+                    <div class="cart__product__increase">
+                        <input type="number" value="1">
+                    </div>
+                    <div class="cart__product__details">
+                        <div class="cart__product__img">
+                            <img src="assets/img/products/f1.jpg" alt="">
+                        </div>
+                        <div class="cart__product__info">
+                            <h4>Organic Banana</h4>
+                            <p>$0.89/lb</p>
+                        </div>
+                        <div class="product__cart__single__total">
+                            <span>$245</span>
+                        </div>
+                    </div>
+                    <div class="cart__product__remove">
+                        <span><i class="far fa-times"></i></span>
+                    </div>
+                </div>
+                <div class="cart__single__blk">
+                    <div class="cart__product__increase">
+                        <input type="number" value="1">
+                    </div>
+                    <div class="cart__product__details">
+                        <div class="cart__product__img">
+                            <img src="assets/img/products/f1.jpg" alt="">
+                        </div>
+                        <div class="cart__product__info">
+                            <h4>Organic Banana</h4>
+                            <p>$0.89/lb</p>
+                        </div>
+                        <div class="product__cart__single__total">
+                            <span>$245</span>
+                        </div>
+                    </div>
+                    <div class="cart__product__remove">
+                        <span><i class="far fa-times"></i></span>
+                    </div>
+                </div>
+                <div class="cart__single__blk">
+                    <div class="cart__product__increase">
+                        <input type="number" value="1">
+                    </div>
+                    <div class="cart__product__details">
+                        <div class="cart__product__img">
+                            <img src="assets/img/products/f1.jpg" alt="">
+                        </div>
+                        <div class="cart__product__info">
+                            <h4>Organic Banana</h4>
+                            <p>$0.89/lb</p>
+                        </div>
+                        <div class="product__cart__single__total">
+                            <span>$245</span>
+                        </div>
+                    </div>
+                    <div class="cart__product__remove">
+                        <span><i class="far fa-times"></i></span>
+                    </div>
+                </div>
+                <div class="cart__single__blk">
+                    <div class="cart__product__increase">
+                        <input type="number" value="1">
+                    </div>
+                    <div class="cart__product__details">
+                        <div class="cart__product__img">
+                            <img src="assets/img/products/f1.jpg" alt="">
+                        </div>
+                        <div class="cart__product__info">
+                            <h4>Organic Banana</h4>
+                            <p>$0.89/lb</p>
+                        </div>
+                        <div class="product__cart__single__total">
+                            <span>$245</span>
+                        </div>
+                    </div>
+                    <div class="cart__product__remove">
+                        <span><i class="far fa-times"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__total__order">
+                <button><span>Go to checkout</span><span>$245</span></button>
+            </div>
+        </div>
+    </div>
+    <div class="cart__overlay"></div>
+    <!--------- Cart area end --------->
+
+
+    <!--------- Login area start --------->
+    <div class="login__all">
+        <span class="login__close"><i class="far fa-times"></i></span>
+        <div class="login__wrap">
+            <div class="login__title">
+                <h2>Log in</h2>
+            </div>
+            <div class="login__auto">
+                <a href="#"><img src="assets/img/basic/google.svg" alt="">Continue with Google</a>
+                <a href="#"><img src="assets/img/basic/facebook.svg" alt="">Continue with Facebook</a>
+                <a href="#"><img src="assets/img/basic/phone.svg" alt="">Continue with Phone</a>
+            </div>
+            <div class="login__others">
+                <span></span>
+                <p>or</p>
+                <span></span>
+            </div>
+            <div class="login__form__wrap">
+                <form action="">
+                    <div class="login__form__main">
+                        <input type="email" placeholder="Email">
+                        <div class="pass__blk">
+                            <span><i class="far fa-eye"></i></span>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <p>Forgot password? <a href="javascript:void(0)" class="reset__acc">Reset it</a></p>
+                        <button type="submit">Log in</button>
+                    </div>
+                </form>
+            </div>
+            <div class="login__account__create">
+                <h4>Don’t have an account?</h4>
+                <a href="javascript:void(0)" class="dont_have_acc">Sign up</a>
+            </div>
+        </div>
+    </div>
+    <div class="login__overlay"></div>
+    <!--------- Login area end --------->
+
+
+    <!--------- Signup area start --------->
+    <div class="signup__all">
+        <span class="signup__close"><i class="far fa-times"></i></span>
+        <div class="login__wrap">
+            <div class="login__title">
+                <h2>Sign up</h2>
+            </div>
+            <div class="login__auto">
+                <a href="#"><img src="assets/img/basic/google.svg" alt="">Continue with Google</a>
+                <a href="#"><img src="assets/img/basic/facebook.svg" alt="">Continue with Facebook</a>
+                <a href="#"><img src="assets/img/basic/phone.svg" alt="">Continue with Phone</a>
+            </div>
+            <div class="login__others">
+                <span></span>
+                <p>or</p>
+                <span></span>
+            </div>
+            <div class="login__form__wrap">
+                <form action="">
+                    <div class="login__form__main">
+                        <input type="email" placeholder="Email">
+                        <div class="pass__blk">
+                            <span><i class="far fa-eye"></i></span>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <button type="submit">Sign up</button>
+                    </div>
+                </form>
+            </div>
+            <div class="login__account__create">
+                <h4>Already have an account?</h4>
+                <a href="javascript:void(0)" class="already_have_acc">Log in</a>
+            </div>
+        </div>
+    </div>
+    <div class="signup__overlay"></div>
+    <!--------- Signup area end --------->
+
+
+    <!--------- Forgot area start --------->
+    <div class="forgot__all">
+        <span class="forgot__close"><i class="far fa-times"></i></span>
+        <div class="login__wrap">
+            <div class="login__title">
+                <h2>Forgot password?</h2>
+            </div>
+            <div class="login__form__wrap">
+                <p class="reset__process">We’ll send you a link to reset your password.</p>
+                <form action="">
+                    <div class="login__form__main">
+                        <input type="email" placeholder="Email">
+                        <button type="submit">Reset password</button>
+                    </div>
+                </form>
+            </div>
+            <div class="login__account__create">
+                <h4>Don’t have an account?</h4>
+                <a href="javascript:void(0)" class="dont_have_acc2">Sign up</a>
+            </div>
+        </div>
+    </div>
+    <div class="forgot__overlay"></div>
+    <!--------- Forgot area end --------->
+
+
+    <!--------- Profile area start --------->
+    <div class="profile__wrap">
+        <div class="profile__main__blk">
+            <span class="profile__close"><i class="far fa-long-arrow-left"></i>back</span>
+            <div class="profile__left__blk">
+                <div class="profile__img__blk">
+                    <img src="assets/img/basic/hero_bg2.jpg" alt="">
+                </div>
+                <div class="profile__user__info">
+                    <h4>Md. Mamun Mia</h4>
+                    <p>view profile</p>
+                </div>
+            </div>
+            <div class="profile__right__blk">
+                <a href="javascript:void(0)" class="profile-setting"><i class="fal fa-cog"></i></a>
+            </div>
+        </div>
+        <div class="profile__wrapper">
+            <div class="profile__single__blk">
+                <h5>your orders</h5>
+                <ul>
+                    <li><a href="#"><i class="fal fa-shopping-bag"></i>order lists</a></li>
+                    <li><a href="#"><i class="fal fa-heart"></i>wishlist</a></li>
+                </ul>
+            </div>
+            <div class="profile__single__blk">
+                <ul>
+                    <li><a href="#"><i class="fal fa-bell"></i>notification</a></li>
+                </ul>
+            </div>
+            <div class="profile__single__blk">
+                <h5>help</h5>
+                <ul>
+                    <li><a href="#"><i class="fal fa-headset"></i>customer support</a></li>
+                    <li><a href="#"><i class="fal fa-question-circle"></i>Frequently Asked Questions</a></li>
+                </ul>
+            </div>
+            <div class="profile__single__blk">
+                <h5>legal terms</h5>
+                <ul>
+                    <li><a href="#"><i class="fal fa-file-alt"></i>terms of use</a></li>
+                    <li><a href="#"><i class="fal fa-file-alt"></i>privacy policy</a></li>
+                    <li><a href="#"><i class="fal fa-file-alt"></i>all legal policies</a></li>
+                </ul>
+            </div>
+            <div class="profile__logout">
+                <a href="#"><i class="fal fa-sign-out-alt"></i>logout</a>
+            </div>
+        </div>
+    </div>
+    <div class="profile__overlay"></div>
+    <!--------- Profile area end --------->
+
+
+    <!--------- Setting area start --------->
+    <div class="setting__wrap">
+        <span class="setting__close"><i class="far fa-long-arrow-left"></i>back</span>
+        <div class="setting__wrapper">
+            <div class="profile__single__blk">
+                <h5>setting</h5>
+                <ul>
+                    <li><a href="#"><i class="fal fa-id-card"></i>account setting</a></li>
+                    <li><a href="#"><i class="fal fa-search-location"></i>manage address</a></li>
+                    <li><a href="#"><i class="fal fa-money-check-alt"></i>payment setting</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--------- Setting area end --------->
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.nice-number.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        let swiperTestimonial = new Swiper(".hero__main__slider", {
+            spaceBetween: 10,
+            loop: true,
+            speed: 2000,
+            fadeEffect: {
+                crossFade: true
+            },
+            effect: "fade",
+            grabCursor: false,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 1,
+                },
+                1024: {
+                    slidesPerView: 1,
+                },
+            },
+        });
+    </script>
+    <script>
+        $('.number__plus').click(function () {
+            $(this).prev().val(+$(this).prev().val() + 1);
+        });
+        $('.number__minus').click(function () {
+            if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+        });
+    </script>
+</body>
+
+</html>

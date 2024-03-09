@@ -1095,8 +1095,17 @@
         gap: 15px;
     }
 
+    .privacy__title p {
+        font-size: 13px;
+    }
 
+    .privacy__title h2 {
+        font-size: 16px;
+    }
 
+    .privacy__single__blk h4 {
+        font-size: 18px;
+    }
 
 
 
