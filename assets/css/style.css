@@ -3336,5 +3336,71 @@ a {
 /*-------------------- Privacy area css end --------------------*/
 
 
+/*-------------------- Payment area css start --------------------*/
+
+.payment__wraps {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+
+.payment__single__blk {
+    position: relative;
+    z-index: 1;
+    transition: .3s;
+    border-radius: 5px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px 20px;
+    border: 1px solid #f0f0f0;
+}
+
+.payment__left__blk {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.payment__img {
+    width: 50px;
+    height: 32px;
+    padding: 3px;
+    border: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+}
+
+.payment__img img {
+    width: 100%;
+}
+
+.payment__name a {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.payment__next span {
+    font-size: 16px;
+    color: #666;
+}
+
+.payment__single__blk:hover {
+    background-color: #f0f0f0;
+}
+
+.payment__single__blk:last-child {
+    margin-bottom: 0;
+}
+
+/*-------------------- Payment area css end --------------------*/
+
+
 /*-------------------- Default area css start --------------------*/
 /*-------------------- Default area css end --------------------*/
