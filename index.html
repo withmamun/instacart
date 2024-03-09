@@ -17,7 +17,7 @@
     <link href="assets/css/responsive.css" rel="stylesheet" />
 
     <title>Bsamcart</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/basic/fav-ico.png">
+    <!-- <link rel="icon" type="image/x-icon" href="assets/img/basic/fav-ico.png"> -->
 </head>
 
 <body>
@@ -62,7 +62,7 @@
     <div class="mob__wrap">
         <ul>
             <li><a href="index.html"><span><i class="fal fa-home"></i></span><span>Home</span></a></li>
-            <li><a href="javascript:void(0)"><span><i class="far fa-heart"></i></span><span>Wishlist</span></a></li>
+            <li><a href="wishlist.html"><span><i class="far fa-heart"></i></span><span>Wishlist</span></a></li>
             <li><a href="javascript:void(0)" class="login__btn"><span><i
                             class="fal fa-sign-in-alt"></i></span><span>Login/Signup</span></a></li>
             <li><a href="javascript:void(0)" class="profile-open"><span><i
@@ -89,15 +89,15 @@
                         <div class="header__search">
                             <div class="header__search__form">
                                 <button><i class="far fa-search"></i></button>
-                                <input type="text" placeholder="Search bsamcart.co">
+                                <input type="text" placeholder="Search bsamcart.ca">
                             </div>
                         </div>
                         <div class="header__right__blk">
-                            <div class="header__btn">
+                            <!-- <div class="header__btn">
                                 <a href="javascript:void(0)" class="login__btn">Log in</a>
                                 <a href="javascript:void(0)" class="signup__btn">Sign up</a>
-                            </div>
-                            <!-- <div class="header__widgets">
+                            </div> -->
+                            <div class="header__widgets">
                                 <div class="header__profile">
                                     <div class="dropdown">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
@@ -117,7 +117,7 @@
                                     <button class="header-cart"><i
                                             class="fas fa-shopping-cart"></i><span>2</span></button>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -142,7 +142,7 @@
                             <form action="">
                                 <div class="mb__header__search">
                                     <button><i class="far fa-search"></i></button>
-                                    <input type="text" placeholder="Search bsamcart.co">
+                                    <input type="text" placeholder="Search bsamcart.ca">
                                 </div>
                             </form>
                         </div>
@@ -1916,15 +1916,15 @@
                 </div>
             </div>
             <div class="profile__right__blk">
-                <a href="javascript:void(0)"><i class="fal fa-cog"></i></a>
+                <a href="javascript:void(0)" class="profile-setting"><i class="fal fa-cog"></i></a>
             </div>
         </div>
         <div class="profile__wrapper">
             <div class="profile__single__blk">
                 <h5>your orders</h5>
                 <ul>
-                    <li><a href="#"><i class="fal fa-shopping-bag"></i>order lists</a></li>
-                    <li><a href="#"><i class="fal fa-heart"></i>wishlist</a></li>
+                    <li><a href="order-list.html"><i class="fal fa-shopping-bag"></i>order lists</a></li>
+                    <li><a href="wishlist.html"><i class="fal fa-heart"></i>wishlist</a></li>
                 </ul>
             </div>
             <div class="profile__single__blk">
@@ -1956,6 +1956,23 @@
     <!--------- Profile area end --------->
 
 
+    <!--------- Setting area start --------->
+    <div class="setting__wrap">
+        <span class="setting__close"><i class="far fa-long-arrow-left"></i>back</span>
+        <div class="setting__wrapper">
+            <div class="profile__single__blk">
+                <h5>setting</h5>
+                <ul>
+                    <li><a href="#"><i class="fal fa-id-card"></i>account setting</a></li>
+                    <li><a href="#"><i class="fal fa-search-location"></i>manage address</a></li>
+                    <li><a href="#"><i class="fal fa-money-check-alt"></i>payment setting</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--------- Setting area end --------->
+
+
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1972,16 +1989,11 @@
                         </div>
                         <div class="product__details__blk">
                             <h4>Details</h4>
-                            <p>Envy is the ultimate apple experience with its extraordinary texture and crunch, balanced
-                                sweetness and beautiful golden red colors, Envy apples can be enjoyed anywhere, anytime!
-                                Best served fresh or paired with cheese boards, sandwiches, mocktails and more. Envy is
-                                an
-                                invitation to enjoy a small moment to savor and raise your expectations of what an apple
-                                can
-                                be. Bite & believe!</p>
+                            <p>Envy is the ultimate apple experience with its extraordinary texture and crunch.</p>
                             <div class="product__details__wrapper">
                                 <div class="product__details__price">
                                     <span>$2.63 each (est.)</span>
+                                    <button><i class="far fa-heart"></i>Add to wishlist</button>
                                 </div>
                                 <div class="product__details__cart">
                                     <div class="product__count">
@@ -2033,13 +2045,16 @@
                             </div>
                         </div>
                     </div>
+                    <div class="related-title">
+                        <h4>Related Products</h4>
+                    </div>
                     <div class="modal__related__products">
                         <div class="product__area">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="product__topbar">
-                                            <h2>Related Products</h2>
+                                            <h2>Fresh Fruits</h2>
                                             <a href="#">View all</a>
                                         </div>
                                     </div>

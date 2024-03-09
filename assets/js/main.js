@@ -8,20 +8,30 @@
         //------------ Offcanvas -------------
 
         $('.menu-open, .mob__category').click(function () {
-            $('.offcanvas-area , .offcanvas-overlay').addClass('active');
+            $('.offcanvas-area, .offcanvas-overlay').addClass('active');
         });
-        $('.menu-close , .offcanvas-overlay').click(function () {
-            $('.offcanvas-area , .offcanvas-overlay').removeClass('active');
+        $('.menu-close, .offcanvas-overlay').click(function () {
+            $('.offcanvas-area, .offcanvas-overlay').removeClass('active');
         });
 
 
         //------------ Profile Sidebar -------------
 
         $('.profile-open').click(function () {
-            $('.profile__wrap , .profile__overlay').addClass('active');
+            $('.profile__wrap, .profile__overlay').addClass('active');
         });
         $('.profile__close, .profile__overlay').click(function () {
-            $('.profile__wrap , .profile__overlay').removeClass('active');
+            $('.profile__wrap, .profile__overlay').removeClass('active');
+        });
+
+
+        //------------ Setting Sidebar -------------
+
+        $('.profile-setting').click(function () {
+            $('.setting__wrap').addClass('active');
+        });
+        $('.setting__close, .profile__overlay').click(function () {
+            $('.setting__wrap').removeClass('active');
         });
 
 
@@ -88,16 +98,13 @@
                 320: {
                     items: 2,
                     margin: 10,
-                    nav: false,
                 },
                 450: {
                     items: 3,
                     margin: 10,
-                    nav: false,
                 },
                 575: {
                     items: 3,
-                    nav: false,
                 },
                 768: {
                     items: 5,
@@ -130,22 +137,19 @@
                 320: {
                     items: 2,
                     margin: 10,
-                    nav: false,
                 },
                 450: {
                     items: 3,
                     margin: 10,
-                    nav: false,
                 },
                 575: {
                     items: 3,
-                    nav: false,
                 },
                 768: {
                     items: 4,
                 },
                 992: {
-                    items: 5,
+                    items: 4,
                 },
                 1100: {
                     items: 5,
